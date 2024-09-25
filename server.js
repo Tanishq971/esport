@@ -14,7 +14,7 @@ app.use(bodyParser.json());
 app.use(express.static(path.join(__dirname, 'public')));
 
 // MongoDB connection
-mongoose.connect("mongodb://localhost:27017/hardikdb", {
+mongoose.connect("mongodb+srv://sakshamkapoor2005:SPKEVa6iYrNEpWPL@saksham.z8j9d.mongodb.net/?retryWrites=true&w=majority&appName=saksham", {
     useNewUrlParser: true,
     useUnifiedTopology: true
 }).then(() => console.log('Connected to MongoDB'))
